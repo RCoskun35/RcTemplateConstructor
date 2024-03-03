@@ -1,0 +1,20 @@
+{
+  "language": "en",
+  "belirlenemeyenBirHataOlustu": "An unspecified error occurred",
+  "alanBosBirakilamaz": "The field is required !",
+  "illegalKullanimIpMacVeDigerBilgilerinizGuvenlikAmaclıYoneticiFirmayaGonderilmistir": "Illegal usage, IP, MAC, and other information have been sent to the administrator firm for security purposes.",
+  "kullanici-islemleri": "user-operations",
+  "birHataOlustuLutfenDahaSonraTekrarDeneyiniz": "An error occurred. Please try again later.",
+  "islemAyniAndaBaskaBirKullaniciTarafindanYapildiLutfenDahaSonraTekrarDeneyiniz": "The operation was performed by another user at the same time. Please try again later.",
+  "girilenSifreHatali": "Entered password is incorrect.",
+  "gecersizDogrulamaKodu": "Invalid verification code.",
+  "buHesapBaskaBirKullaniciyaAittir": "This account belongs to another user.",
+  "kullaniciAdiGecersiz": "Invalid username",
+  "kullaniciAdiEnAz3KarakterUzunlugundaOlmalidir": "Username must be at least 3 characters long.",
+  "epostaAdresiGecersiz": "Invalid email address",
+  "kullaniciAdiZatenKullanilmaktadir": "Username is already in use",
+  "epostaAdresiZatenKullanilmaktadir": "Email address is already in use",
+  "rolAdiGecersiz": "Invalid role name",
+  "rolAdiEnAz3KarakterUzunlugundaOlmalidir": "Role name must be at least 3 characters long.",
+  "rolAdiZatenKullanilmaktadir": "Role name is already in use"
+}
