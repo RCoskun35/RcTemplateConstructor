@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{EC8A7678-C0EC-4A89-B733-89DD88A480C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{EC8A7678-C0EC-4A89-B733-89DD88A480C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{9EFBA0FF-8551-4394-8012-2E2267474B4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{9EFBA0FF-8551-4394-8012-2E2267474B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{6456284A-86CD-475C-9540-3C9D4880373B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{6456284A-86CD-475C-9540-3C9D4880373B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{EC26154F-B824-454C-A946-63F5B5FC6EC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{EC26154F-B824-454C-A946-63F5B5FC6EC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{3815E0D4-712E-46D9-ABD6-CC784D2BC39E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{3815E0D4-712E-46D9-ABD6-CC784D2BC39E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{C8170849-0F7F-46BE-B9FC-70968053C6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{C8170849-0F7F-46BE-B9FC-70968053C6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUtility", "ConsoleUtility\ConsoleUtility.csproj", "{3F6DBB27-7805-446D-9B2E-A9D25185F881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUtility", "ConsoleUtility\ConsoleUtility.csproj", "{3F6DBB27-7805-446D-9B2E-A9D25185F881}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcServer", "GrpcServer\GrpcServer.csproj", "{F959259D-B525-4643-AA64-7688D5BE69A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{64E44F17-34CE-432C-B2F4-58B7487EFBE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{3F6DBB27-7805-446D-9B2E-A9D25185F881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F6DBB27-7805-446D-9B2E-A9D25185F881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F6DBB27-7805-446D-9B2E-A9D25185F881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F959259D-B525-4643-AA64-7688D5BE69A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F959259D-B525-4643-AA64-7688D5BE69A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F959259D-B525-4643-AA64-7688D5BE69A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F959259D-B525-4643-AA64-7688D5BE69A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E44F17-34CE-432C-B2F4-58B7487EFBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E44F17-34CE-432C-B2F4-58B7487EFBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E44F17-34CE-432C-B2F4-58B7487EFBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E44F17-34CE-432C-B2F4-58B7487EFBE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
