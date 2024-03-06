@@ -3,30 +3,30 @@
 
 This outline includes fundamental structures that may be needed when starting a project, along with examples. The general structure is as follows:
 ## Features
-Solution
--- Domain
---Application
---Infrastructure
---Persistence
---API
---Web
---ConsoleUtility
---GrpcServer
---GrpcClient
- - The project utilizes Microsoft.Identity and JWT for Authentication and Authorization processes.
-- Validation is done with FluentValidation and mapping is done with AutoMapper.
--  SignalR API and Web communication are possible.
--  Background tasks can be executed with Hangfire.
--  Role-based authorization is implemented. Claims are created and assigned to roles within the application, allowing for extensive authorization based on roles. Operations like Add, Update, Delete, View are role-based.
+Solution<br>
+-- Domain<br>
+--Application<br>
+--Infrastructure<br>
+--Persistence<br>
+--API<br>
+--Web<br>
+--ConsoleUtility<br>
+--GrpcServer<br>
+--GrpcClient<br>
+ - The project utilizes Microsoft.Identity and JWT for Authentication and Authorization processes.<br>
+- Validation is done with FluentValidation and mapping is done with AutoMapper.<br>
+-  SignalR API and Web communication are possible.<br>
+-  Background tasks can be executed with Hangfire.<br>
+-  Role-based authorization is implemented. Claims are created and assigned to roles within the application, allowing for extensive authorization based on roles. Operations like Add, Update, Delete, View are role-based.<br>
 
-Entities are stored in Domain.
-Features in Application include:
-Interfaces IAuthenticationService and ITokenService responsible for token generation and authentication processes.
-Modules are created with Permissions.
-SignalR messages are handled with Hub.
-Multilingual structure is established with Language. Simply creating a JSON file for required languages is sufficient.
-Interfaces of classes responsible for database operations are stored in Repositories.
-Shared infrastructure is set up to provide common responses to requests.
+Entities are stored in Domain.<br>
+Features in Application include:<br>
+Interfaces IAuthenticationService and ITokenService responsible for token generation and authentication processes.<br>
+Modules are created with Permissions.<br>
+SignalR messages are handled with Hub.<br>
+Multilingual structure is established with Language. Simply creating a JSON file for required languages is sufficient.<br>
+Interfaces of classes responsible for database operations are stored in Repositories.<br>
+Shared infrastructure is set up to provide common responses to requests.<br>
 Static Services include the following services:<br>
 -- ClaimApiService for basic information of API users (Name, Surname, Roles, etc.),<br>
 -- ClaimService for basic information of web users (Name, Surname, Roles, etc.),<br>
