@@ -3,11 +3,13 @@ using Application.DTOs;
 using Application.Repositories;
 using Application.Shared;
 using Application.StaticServices;
+using Azure.Data.Tables;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Persistence;
 using static API.Extensions.CustomExceptionHandler;
 
 namespace API.Controllers
@@ -16,10 +18,10 @@ namespace API.Controllers
     [ApiController]
     public class AuthController : BaseController
     {
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<Domain.Entities.User> _userManager;
         private readonly IAuthenticationService _authenticationService;
         private readonly HashService _hashService;
-        public AuthController(IAuthenticationService authenticationService, UserManager<User> userManager, HashService hashService)
+        public AuthController(IAuthenticationService authenticationService, UserManager<Domain.Entities.User> userManager, HashService hashService)
         {
             _authenticationService = authenticationService;
             _userManager = userManager;
@@ -122,6 +124,12 @@ namespace API.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+       
+
+
+     
+
 
     }
 }

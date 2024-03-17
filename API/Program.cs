@@ -21,6 +21,7 @@ builder.Services.AddControllers()
     });
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(IAzureRepository<>), typeof(AzureRepository<>));
 // Add services to the container.
 builder.Services.AddApiPersistenceServices();
 builder.Services.AddHangfire(config => config.UseSqlServerStorage(Configuration.ConnectionString));

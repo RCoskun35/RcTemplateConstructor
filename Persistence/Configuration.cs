@@ -33,5 +33,24 @@ namespace Persistence
                 return decryptedConnectionString;
             }
         }
+
+
+             static public string AzureConnectionString
+        {
+            get
+            {
+               
+                string currentDirectory = Directory.GetCurrentDirectory();
+
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                    .SetBasePath(currentDirectory)
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+
+                string encryptedConnectionString = configuration.GetConnectionString("AzureConnectionString");
+               
+                return encryptedConnectionString;
+            }
+        }
     }
 }

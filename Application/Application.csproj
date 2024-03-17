@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Monikers.imagemanifest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.5.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.0" />
@@ -22,5 +26,10 @@
 		<AssemblyAttribute Include="System.Reflection.AssemblyTrademarkAttribute">
 			<_Parameter1>rctemplate</_Parameter1>
 		</AssemblyAttribute>
+	</ItemGroup>
+	<ItemGroup>
+	  <content Include="Monikers.imagemanifest">
+	    <IncludeInVSIX>true</IncludeInVSIX>
+	  </content>
 	</ItemGroup>
 </Project>
